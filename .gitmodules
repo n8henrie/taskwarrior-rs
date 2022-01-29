@@ -1,0 +1,3 @@
+[submodule "taskwarrior-sys/vendor/taskwarrior"]
+	path = taskwarrior-sys/vendor/taskwarrior
+	url = git@github.com:GothenburgBitFactory/taskwarrior.git
