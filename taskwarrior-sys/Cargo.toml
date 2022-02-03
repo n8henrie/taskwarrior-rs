@@ -1,0 +1,14 @@
+[package]
+name = "taskwarrior-sys"
+version = "0.1.1"
+authors = ["Nathan Henrie <nate@n8henrie.com>"]
+readme = "../README.md"
+license = "MIT"
+edition = "2021"
+description = "Rust bindings for taskwarrior"
+repository = "https://github.com/n8henrie/taskwarrior-sys"
+
+[build-dependencies]
+cmake = "0.1.46"
+bindgen = "0.59"
+cc = "1"
