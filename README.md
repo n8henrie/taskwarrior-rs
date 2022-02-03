@@ -1,7 +1,7 @@
 # taskwarrior-rs
 
-master: [![master branch build status](https://github.com/n8henrie/taskwarrior-rs/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/n8henrie/taskwarrior-rs/actions/workflows/build.yml)
-<!-- dev: [![dev branch build status](https://github.com/n8henrie/taskwarrior-rs/actions/workflows/build.yml/badge.svg?branch=dev)](https://github.com/n8henrie/taskwarrior-rs/actions/workflows/build.yml) -->
+master: [![master branch build status](https://github.com/n8henrie/taskwarrior-rs/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/n8henrie/taskwarrior-rs/actions/workflows/ci.yml)
+<!-- dev: [![dev branch build status](https://github.com/n8henrie/taskwarrior-rs/actions/workflows/ci.yml/badge.svg?branch=dev)](https://github.com/n8henrie/taskwarrior-rs/actions/workflows/ci.yml) -->
 
 [![Crates.io](https://img.shields.io/crates/v/taskwarrior-rs.svg)](https://crates.io/crates/taskwarrior-rs)
 [![Docs.rs](https://docs.rs/taskwarrior-rs/badge.svg)](https://docs.rs/taskwarrior-rs)
