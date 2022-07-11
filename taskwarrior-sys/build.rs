@@ -8,7 +8,7 @@ fn main() {
 
     let dst = Config::new("vendor/taskwarrior")
         .profile("release")
-        .define("PROJECT_VERSION", "2.6.1")
+        .define("PROJECT_VERSION", "2.6.2")
         .build();
 
     let src = ["wrapper.cpp"];
