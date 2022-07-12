@@ -4,11 +4,12 @@ extern "C" {
 
 typedef struct Context Context;
 
-Context* newContext();
+Context *newContext();
 void Context_setContext(Context *c);
-Context* Context_getContext(Context *c);
-int Context_initialize(Context *c, int, const char**);
+Context *Context_getContext(Context *c);
+int Context_initialize(Context *c, int, const char **);
 int Context_run(Context *c);
+int Context_dispatch(Context *c, char *);
 void delContext(Context *c);
 
 #ifdef __cplusplus

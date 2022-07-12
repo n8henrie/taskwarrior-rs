@@ -9,6 +9,6 @@ description = "Rust bindings for taskwarrior"
 repository = "https://github.com/n8henrie/taskwarrior-sys"
 
 [build-dependencies]
-cmake = "0.1.46"
-bindgen = "0.59"
-cc = "1"
+cmake = "0.1.48"
+bindgen = "0.60.1"
+# cc = "1"
