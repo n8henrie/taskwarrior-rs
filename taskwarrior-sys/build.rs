@@ -14,11 +14,11 @@ fn main() {
     // println!("cargo:rerun-if-changed=wrapper.h");
     // println!("cargo:rerun-if-changed=wrapper.cpp");
 
-    // let dst = Config::new("vendor/taskwarrior")
-    //     .profile("release")
-    //     .define("PROJECT_VERSION", "2.6.2")
-    //     .build();
-    let dst = FakeDst();
+    let dst = Config::new("vendor/taskwarrior")
+        .profile("release")
+        .define("PROJECT_VERSION", "2.6.2")
+        .build();
+    // let dst = FakeDst();
 
     // let src = ["wrapper.cpp"];
     //     let src = ["vendor/taskwarrior/src/Context.cpp"];
