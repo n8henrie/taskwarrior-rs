@@ -22,6 +22,14 @@ int Context_run(Context *c) {
     return c->run();
 }
 
+int Context_dispatch(Context *c, char *out) {
+    std::string str(out);
+    int status = c->dispatch(str);
+    strcpy(out, str.c_str());
+    return status;
+}
+
 void delContext(Context *c) {
     delete c;
 }
+
