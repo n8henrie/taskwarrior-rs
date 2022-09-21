@@ -2,25 +2,17 @@
 #include "vendor/taskwarrior/src/Context.h"
 #include <iostream>
 
-Context* newContext() {
-    return new Context;
-}
+Context *newContext() { return new Context; }
 
-void Context_setContext(Context *c) {
-    c->setContext(c);
-}
+void Context_setContext(Context *c) { c->setContext(c); }
 
-Context* Context_getContext(Context *c) {
-    return &c->getContext();
-}
+Context *Context_getContext(Context *c) { return &c->getContext(); }
 
-int Context_initialize(Context *c, int argc, const char** argv) {
+int Context_initialize(Context *c, int argc, const char **argv) {
     return c->initialize(argc, argv);
 }
 
-int Context_run(Context *c) {
-    return c->run();
-}
+int Context_run(Context *c) { return c->run(); }
 
 int Context_dispatch(Context *c, char *out) {
     std::string str(out);
@@ -29,7 +21,4 @@ int Context_dispatch(Context *c, char *out) {
     return status;
 }
 
-void delContext(Context *c) {
-    delete c;
-}
-
+void delContext(Context *c) { delete c; }
