@@ -5,6 +5,7 @@ use cmake::Config;
 
 fn main() {
     println!("cargo:rerun-if-changed=wrapper.h");
+    println!("cargo:rerun-if-changed=wrapper.cpp");
 
     let dst = Config::new("vendor/taskwarrior")
         .profile("release")
