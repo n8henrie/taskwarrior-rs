@@ -5,8 +5,7 @@ include!(concat!(env!("OUT_DIR"), "/bindings.rs"));
 #[cfg(test)]
 mod tests {
     use super::*;
-    use ::std::ffi::{CStr, CString};
-    use std::os::raw::c_char;
+    use ::std::ffi::{c_char, CStr, CString};
 
     type Result<T> = ::std::result::Result<T, Box<dyn ::std::error::Error>>;
 
