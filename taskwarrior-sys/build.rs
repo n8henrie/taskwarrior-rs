@@ -43,15 +43,21 @@ fn main() {
 
     let target_os = env::var("CARGO_CFG_TARGET_OS");
     match target_os.as_deref() {
-        Ok("linux") => println!("cargo:rustc-link-lib=stdc++"),
-        Ok("macos") => println!("cargo:rustc-link-lib=c++"),
+        Ok("linux") => {
+            println!("cargo:rustc-link-lib=stdc++");
+            println!("cargo:rustc-link-lib=dylib=uuid");
+        }
+        Ok("macos") => {
+            println!("cargo:rustc-link-lib=c++");
+            println!(
+                "cargo:rustc-link-search=native=/opt/homebrew/opt/gnutls/lib"
+            );
+        }
         Ok(target) => panic!("not sure how to link on {target}"),
         Err(e) => panic!("Not able to determine target due to {e}"),
     }
 
-    println!("cargo:rustc-link-search=native=/opt/homebrew/opt/gnutls/lib");
     println!("cargo:rustc-link-lib=dylib=gnutls");
-    println!("cargo:rustc-link-lib=dylib=uuid");
 
     let bindings = bindgen::Builder::default()
         .header("wrapper.h")
