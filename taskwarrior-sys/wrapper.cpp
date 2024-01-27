@@ -1,6 +1,7 @@
 #include "wrapper.h"
 #include "vendor/taskwarrior/src/Context.h"
 #include <iostream>
+#include <cstring>
 
 Context *newContext() { return new Context; }
 

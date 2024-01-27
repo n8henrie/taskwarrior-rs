@@ -44,6 +44,7 @@ fn main() {
 
     println!("cargo:rustc-link-search=native=/opt/homebrew/opt/gnutls/lib");
     println!("cargo:rustc-link-lib=dylib=gnutls");
+    println!("cargo:rustc-link-lib=dylib=uuid");
 
     let bindings = bindgen::Builder::default()
         .header("wrapper.h")
