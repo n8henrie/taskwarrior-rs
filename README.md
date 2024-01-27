@@ -38,10 +38,13 @@ taskwarrior, check out
 
 - TODO
 
-## Quickstart
+## Development
 
 ```console
-$ cargo install taskwarrior
+$ git clone https://github.com/n8henrie/taskwarrior-rs.git
+$ cd taskwarrior-rs
+$ git submodule update --init --recursive
+$ cargo test -- --test-threads=1
 ```
 
 ### Cargo
