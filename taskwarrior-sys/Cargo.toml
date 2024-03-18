@@ -12,3 +12,7 @@ repository = "https://github.com/n8henrie/taskwarrior-sys"
 cmake = "0.1.46"
 bindgen = "0.59"
 cc = "1"
+cxx-build = "1.0"
+
+[dependencies]
+cxx = "1.0.119"
