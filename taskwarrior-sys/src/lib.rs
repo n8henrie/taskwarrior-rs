@@ -1,11 +1,10 @@
 #![allow(non_camel_case_types, non_snake_case, non_upper_case_globals)]
 include!(concat!(env!("OUT_DIR"), "/bindings.rs"));
-// include!("bindings.rs");
 
 #[cfg(test)]
 mod tests {
     use super::*;
-    use ::std::ffi::{c_char, CStr, CString};
+    use ::std::ffi::{CStr, CString, c_char};
 
     type Result<T> = ::std::result::Result<T, Box<dyn ::std::error::Error>>;
 
