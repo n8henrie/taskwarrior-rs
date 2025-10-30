@@ -5,4 +5,4 @@ edition = "2024"
 description = "Rust interface to taskwarrior 2 via taskwarrior-sys"
 
 [dependencies]
-taskwarrior-sys = "0.1.2"
+taskwarrior-sys = { version = "0.1.2", path = "../taskwarrior-sys" }
